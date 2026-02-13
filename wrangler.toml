@@ -1,0 +1,23 @@
+name = "task-manager"
+main = "src/index.ts"
+compatibility_date = "2024-02-08"
+
+# تنظیمات دیتابیس D1
+[[d1_databases]]
+binding = "DB"
+database_name = "task-db"
+database_id = "xxxx-xxxx-xxxx-xxxx"  # <--- این را باید در مرحله بعد بگیری و جایگزین کنی
+
+# تنظیمات سیستم چت (Durable Objects)
+[durable_objects]
+bindings = [
+  { name = "CHAT_ROOM", class_name = "ChatRoom" }
+]
+
+[[migrations]]
+tag = "v1"
+new_classes = ["ChatRoom"]
+
+# تنظیمات متغیرهای امنیتی
+[vars]
+JWT_SECRET = "yek-ramze-kheili-kheili-sakht-bezan-inja"
