@@ -16,11 +16,11 @@ bindings = [
 
 [[migrations]]
 tag = "v1"
-new_classes = ["ChatRoom"]
 new_sqlite_classes = ["ChatRoom"]
 
 # تنظیمات متغیرهای امنیتی
 [vars]
 
 JWT_SECRET = "yek-ramze-kheili-kheili-sakht-bezan-inja"
+
 
